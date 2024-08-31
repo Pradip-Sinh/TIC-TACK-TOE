@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #201832;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+
+
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    font-size: 8vmin;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 3.5);
+    color: #b0413e;
+    background-color: #d1cae0;
+}
+
+#reset-button {
+    padding: 1.15rem;
+    background-color: #435986;
+    border-radius: 0.5rem;
+    border: none;
+    color: #d1cae0;
+    font-weight: 100;
+    cursor: grab;
+}
+
+#reset-button:hover {
+    text-shadow: 3px 3px 2px  #5a78b0;
+    font-weight: 300;
+    padding: 1.18rem;
+}
+
+#new-game {
+    padding: 1.15rem;
+    background-color: #394765;
+    border-radius: 0.5rem;
+    border: none;
+    color: #d1cae0;
+    font-weight: 200;
+    cursor: grab;
+
+}
+#new-game:hover {
+    text-shadow: 3px 3px 2px  #5a78b0;
+    font-weight: 300;
+    padding: 1.18rem;
+}
+#msg {
+    font-size: 5vmin;
+    color: #aaa8ac;
+    padding: 5px;
+
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hide {
+    display: none;
+} 
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #201832;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    .container {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    .game{
+        height: 60vmin;
+        width: 60vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+        position: relative;
+        top: 60%;
+        
+       
+    }
+    .heading{
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        font-size: 1.2rem;
+
+    }
+    #reset-button{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+
+    }
+  }
