@@ -1,1 +1,1 @@
-# This is tic tack toe game
+# This is tic tack toe game base on the javascript
